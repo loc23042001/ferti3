@@ -37,9 +37,19 @@
    }
     document.getElementById("No").innerHTML=string;
 	/*--------------------------*/
+  }
+function random1()
+  {
+ var a1=document.getElementById("No").value;
+     if(a1==="1")
+       {
+		   var arr1=["1","2","3","4","5","6","7","8","9","10"];
+	   }
+	 else{
+		 var arr1=["1","2","3","4","5","6","7","8","9","10"];
+		}
 var string1="";
  string1="<option>"+"....."+"</option>";
-var arr1=["1","2","3","4","5","6","7","8","9","10"];
 for(i=0;i<10;i++)
    {
 	string1=string1+"<option value="+arr1[i]+">"+arr1[i]+"</option>";
@@ -74,9 +84,7 @@ var query = document.getElementById('fname2');
 query.value = initialValue;
 var query = document.getElementById('fname3');
 query.value = initialValue;
-var query = document.getElementById('fname');
-query.value = initialValue;
-var query = document.getElementById('EC');
+var query = document.getElementById('fname4');
 query.value = initialValue;
  }
 </script>
@@ -90,14 +98,7 @@ FERTIGATION
 <div class="bg1">
 <label for="appt">Select start time:</label>
 <input type="time" id="appt" name="appt">
-  Number of cycle: <select id="cycle" onchange="random()" >
-            <option>.....</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
+  Number of cycle: <input type="text" id="cycle" onchange="random()" placeholder=".........">
   <br/>
         <div>
          Cycle No:
@@ -120,14 +121,13 @@ FERTIGATION
          valve2:
       <select id="valve2" onchange="random4()"><option>.....</option></select>
   </div>
-<label for="target pH">target_pH:</label>
-    <input type="text" id="fname" name="pH" placeholder=".........">pH
-   <br/>
-   <label for="target EC">target EC:</label>
-    <input type="text" id="EC" name="EC" placeholder=".........">uS/m
+<label for="target_pH">target pH:</label>
+    <input type="text" id="fname3"   placeholder=".........">pH
+    </br>
+    target EC:<input type="text" id="fname4"  placeholder=".........">uS/m
 </div>
 <div class="submit">
-<a href="https://loc23042001.github.io/ferti1/">SAVE AND RETURN</a>
+<a href="menu.html">SAVE AND RETURN</a>
 </div>
 </body>
 </html>
