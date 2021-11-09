@@ -21,8 +21,8 @@
 	background-color: #f2f2f2;
 	padding: 10px;
 	position: absolute;
-	left: 520px;
-	top: 448px;
+	left: 524px;
+	top: 439px;
 	width: 177px;
 }
 .submit a:hover{
@@ -49,10 +49,10 @@
 #valve2{
 	width:40px;
 }
-#fname{
+#fname4{
 	width:30px;
 }
-#EC{
+#cycle{
 	width:30px;
 }
 i{
